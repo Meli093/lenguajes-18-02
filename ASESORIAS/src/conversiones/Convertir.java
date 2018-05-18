@@ -1,5 +1,5 @@
 package conversiones;
-
+//Esta clase es tipo modelo por que solamente contien operacion con clase entidad
 
 public class Convertir {
  Grados g;
