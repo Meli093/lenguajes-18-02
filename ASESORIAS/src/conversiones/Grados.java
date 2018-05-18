@@ -6,8 +6,8 @@ package conversiones;
  */
 public class Grados {
  private float centigrados;
- private float far;
-private float kelvin;
+   private float far;
+   private float kelvin;
 
     public float getCentigrados() {
         return centigrados;
