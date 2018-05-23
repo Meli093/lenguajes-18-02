@@ -11,7 +11,7 @@ public class Main {
        System.out.println(convertir.FarACentrigrados()); 
         System.out.println(convertir.centigradosAKelvin()); 
         
-    pies p=new pies();
+    Pies p=new Pies();
     p.setmetros(3.281);
     Conversiones conversiones=new Conversiones(p);
     

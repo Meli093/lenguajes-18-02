@@ -12,10 +12,10 @@ public class Centimetros {
     public void pulgadas(){
         pies = metros * 39.37f;
     }
-    public double getPies(){
+    public float getPies(){
         return pies;
     }
-    public double getPulgadas(){
+    public float getmetros(){
         return pies;
     }
     public void mostrarResultado(){
