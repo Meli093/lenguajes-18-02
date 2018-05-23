@@ -10,6 +10,15 @@ public class Main {
         g.setFar(68);
        System.out.println(convertir.FarACentrigrados()); 
         System.out.println(convertir.centigradosAKelvin()); 
-    }
+        
+    pies p=new pies();
+    p.setmetros(3.281);
+    Conversiones conversiones=new Conversiones(p);
     
+    
+        System.out.println(conversiones.getPies());
+        p.setcentimetros(39.37);
+         System.out.println(conversiones.getCentimetros());
+          System.out.println(conversiones.getMetros());
+    }
 }
