@@ -131,23 +131,23 @@ public class VentanaConversora extends javax.swing.JFrame {
          Grados g=new Grados();
      g.setCentigrados(Float.parseFloat(jTextField1.getText()));
      Convertir convertir=new Convertir(g);
-      jLabel2.setText(""+convertir.centigradosAfar());
+      jLabel2.setText(""+convertir.centigradosAFarenheit());
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
 
-        Longitudes g=new Longitudes();
+        Longitud g=new Longitud();
         //A este objeto le asignamos un valor a su atributo centigrados
         g.setMetros(Float.parseFloat(jTextField2.getText()));
 
         //Creamos un objeto de la clase Conversion
-        Conversion c=new Conversion();
+        Convertir c=new Convertir();
         c.setLongitudes(g);
         //Aplicar el modelo
 
-        jLabel4.setText(""+c.metrosAPies());
+        jLabel3.setText(""+c.metrosAPies());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
