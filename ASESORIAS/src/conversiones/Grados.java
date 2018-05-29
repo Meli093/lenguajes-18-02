@@ -6,8 +6,7 @@ package conversiones;
  */
 public class Grados {
  private float centigrados;
-   private float far;
-   private float kelvin;
+    private float farenheit;
 
     public float getCentigrados() {
         return centigrados;
@@ -17,19 +16,12 @@ public class Grados {
         this.centigrados = centigrados;
     }
 
-    public float getFar() {
-        return far;
+    public float getFarenheit() {
+        return farenheit;
     }
 
-    public void setFar(float far) {
-        this.far = far;
+    public void setFarenheit(float farenheit) {
+        this.farenheit = farenheit;
     }
-
-    public float getKelvin() {
-        return kelvin;
-    }
-
-    public void setKelvin(float kelvin) {
-        this.kelvin = kelvin;
-    }
+    
 }

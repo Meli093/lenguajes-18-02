@@ -8,12 +8,12 @@ public class Main {
         g.setCentigrados(20);
         
         //Creamos un objeto de la clase Conversion
-        Convertir c=new Convertir();
+        Conversion c=new Conversion();
         c.setGrados(g); 
         //Aplicar el modelo
         
         
-        System.out.println(c.centigradosAFarenheit());
+      System.out.println(c.centigradosAFarenheit());
               
         
     }
