@@ -9,16 +9,14 @@ package POLIMORFISMO;
  *
  * @author rutil
  */
-public class Perro {
+public class Perro extends Animal{
 
-    public Perro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   @Override
  public String obtenerRuido() {
-        return "wao";
+        return "gua-gua";
     }
-    
+    @Override
     public String toString() {
-        return "wao";
+        return "gua-gua";
     }    
 }

@@ -11,14 +11,17 @@ package POLIMORFISMO;
  */
 public class Gato extends Animal{
 
-    /**
-     *
-     * @return
-     */
- 
+     @Override
+    public String obtenerRuido() {
+        return "miau";
+    }
     
-   public String toString() {
+     @Override
+    public String toString() {
         return "Gato";
+   
+    
+ 
     }
 
 }   

@@ -9,6 +9,7 @@ package POLIMORFISMO;
  *
  * @author rutil
  */
+import javax.swing.DefaultComboBoxModel;
 public class Zoologico extends javax.swing.JFrame {
 
     /**
@@ -17,7 +18,11 @@ public class Zoologico extends javax.swing.JFrame {
     public Zoologico() {
         initComponents();
    //DefaultComboBoxModel modelo=new DefaultComboBoxModel(new Animal[]{new Perro(),new Gato(), new Raton()});
-   
+   DefaultComboBoxModel modelo=new DefaultComboBoxModel(new Animal[]{new Perro(),new Gato(), new Raton()});
+
+
+jComboBox1.setModel(modelo);
+
     }
 
     /**

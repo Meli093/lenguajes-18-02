@@ -9,18 +9,15 @@ package POLIMORFISMO;
  *
  * @author rutil
  */
-public class Raton {
+public class Raton extends Animal{
 
-    public Raton() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    
+  
+    @Override
  public String obtenerRuido() {
         return "ii";
     }
-    
+    @Override
     public String toString() {
-        return "iii";
+        return "Raton";
     }    
 }
