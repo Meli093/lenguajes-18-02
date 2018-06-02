@@ -9,30 +9,44 @@ package IMC;
  *
  * @author rutil
  */
+import javax.swing.*;
 public class imc {
-
-private float peso;
-private float altura;
-
-    public float getPeso() {
-        return peso;
-    }
-
-    public void setPeso(float peso) {
+float peso;
+float altura;
+float imc;
+public imc(float peso, float altura, float imc) {
         this.peso = peso;
-    }
-
-    public float getAltura() {
-        return altura;
-    }
-
-    public void setAltura(float altura) {
         this.altura = altura;
-    }
+        this.imc = imc;
+       
+        
+        if (imc<18.5f) {
 
-   
+            System.out.println("BAJO PESO");
 
-      }
+        } else if (imc>=18.5f && imc<=24.9f) {
 
+            System.out.println("NORMAL");
+
+        } else if (imc>=25 && imc<=29.9f) {
+
+            System.out.println("SOBREPESO");
+
+        } else {
+
+            System.out.println("OBESIDAD");
+
+        }        
+        
     
    
+    
+    
+    
+    
+    }
+
+
+
+
+}

@@ -9,16 +9,7 @@ package IMC;
  *
  * @author rutil
  */
-import javax.swing.JFrame;
+
 public class Aplicacion {
-public static void main(String[] args) {
-float peso;
-float altura;
-
-
+    
 }
-
-    
-    }
-    
-
