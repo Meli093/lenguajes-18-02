@@ -9,7 +9,7 @@ package IMC;
  *
  * @author rutil
  */
-import java.util.Scanner;
+
 public class Usuario {
     private float peso;
     private float altura;
@@ -33,6 +33,10 @@ public class Usuario {
 
     public void setPeso(float peso) {
         this.peso = peso;
+    }
+     public float calcular(){
+        float calcular=peso/(altura*altura);
+        return calcular;
     }
 
 
