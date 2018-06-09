@@ -40,7 +40,7 @@ c1.setPreguntas(preguntas);
                  System.out.println(p.getTitulo());   
                  
                  
-                 for (Opcion o:p getOpciones()){
+                 for (Opcion o:p.getOpciones()){
                  System.out.println(o.getTitulo()+""+o.isCorrecta());
                      
                  }
