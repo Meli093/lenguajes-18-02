@@ -5,10 +5,7 @@
  */
 package IMC;
 
-/**
- *
- * @author T-102
- */
+
 public class Aplicacion extends javax.swing.JFrame {
 
     /**
@@ -92,19 +89,17 @@ public class Aplicacion extends javax.swing.JFrame {
 
     private void botoncitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoncitoActionPerformed
         // TODO add your handling code here:
-        Usuario jc=new Usuario();
-       // jc.peso=-70;
-      //  jc.altura=1.68f;
-      //PRIMERO PEDIMOS EL VALOR DEL CAMPO
+        Usuario c=new Usuario();
+      
      try{
       float peso=Float.parseFloat(textoPeso.getText());
       
-         jc.setPeso(peso);
+         c.setPeso(peso);
         float altura=Float.parseFloat(textoAltura.getText());
-         jc.setAltura(altura); 
+         c.setAltura(altura); 
          
         Imc modelo=new Imc();
-        modelo.u=jc;
+        modelo.u=c;
                 
         etiqueta.setText(modelo.calcular());
      }catch(Exception e ){
