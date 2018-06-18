@@ -1,4 +1,4 @@
-package Herencia.herencia;
+package Herencia.EJ1;
 
 public class Estudiante extends Persona{
     //A hora llamos nuestro construcor.

@@ -1,4 +1,4 @@
-package Herencia.herencia;
+package Herencia.EJ1;
 
 /**
  *
