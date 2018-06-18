@@ -8,7 +8,7 @@ public class Coche {
 String color;
 String marca;
 int km;
-//metodo
+//metodo Es una accion o comportamiento de los objteos.
 public static void main(String[] args) {
  Coche c1=new Coche();
  
