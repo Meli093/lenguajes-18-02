@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Genericos;
+import java.util.*;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
 
-/**
- *
- * @author my
- */
 public class VePregunta extends javax.swing.JPanel {
 
     /**
@@ -16,6 +12,28 @@ public class VePregunta extends javax.swing.JPanel {
      */
     public VePregunta() {
         initComponents();
+    GeneradorCuestionario generador=new GeneradorCuestionario();
+    JLabel l1=new JLabel();
+     //ArrayList<JRadioButton> radios=new ArrayList<JRadioButton>();
+        for(Pregunta p:generador.getCuestionario().getPreguntas()){
+            //System.out.println(p.getTitulo());
+            l1.setText(p.getTitulo());
+            jPanel1.add(l1);
+            
+            ButtonGroup grupo=new ButtonGroup();
+            for(Opcion o:p.getOpciones()){
+                //System.out.println(o.getTitulo()+" "+o.isCorrecta());
+                JRadioButton r=new JRadioButton();
+                r.setText(o.getTitulo());
+                grupo.add(r);
+                jPanel1.add(r);
+            }
+            boton=new JButton("Checar respuesta");
+            jPanel1.add(boton);
+        }
+        
+    
+    
     }
 
     /**
@@ -27,19 +45,44 @@ public class VePregunta extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+
+        jTextField1.setText("jTextField1");
+
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel1)
+                .addGap(72, 72, 72)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(190, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addContainerGap(261, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private static class GeneradorCuestionario {
+
+        public GeneradorCuestionario() {
+        }
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
