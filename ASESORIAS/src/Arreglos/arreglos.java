@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*es un aestructura de datos que nos permite almacenar del mismo tipo de datos.
+ * El array no se pueden cambiar durante la ejecucion del programa. 
+*/
 package Arreglos;
 
 /**
