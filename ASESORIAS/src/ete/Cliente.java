@@ -7,7 +7,7 @@ package ete;
 
 /**
  *
- * @author T-101
+ * @author meliton
  */
 public class Cliente {
     
@@ -15,7 +15,7 @@ private String nombre;
 private Tarjeta tarjeta;
 
 
-    public Cliente() {
+    public Cliente() {//constructor por defecto
     }
 
     //TE PERMITE IMPRIMIR TODOS LAS PROPIEDADES DE UN OBJETO EN UNA CADENA DE TEXTO
