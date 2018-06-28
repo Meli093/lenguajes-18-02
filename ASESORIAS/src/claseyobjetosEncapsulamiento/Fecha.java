@@ -4,7 +4,7 @@
  * int son numeros enteros (positivos)
  * private encapsula la clase y accederlas por fuera de la clase generar un error compilacion
  */
-package claseyobjetosCapsulamiento;
+package claseyobjetosEncapsulamiento;
 
 /**
  *

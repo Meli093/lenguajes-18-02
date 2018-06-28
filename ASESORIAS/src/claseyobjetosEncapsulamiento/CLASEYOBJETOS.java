@@ -2,7 +2,7 @@
  ** de una misma clase podran almacenar el mismo tipo de informacion y asi manipular
  *
  */
-package claseyobjetosCapsulamiento;
+package claseyobjetosEncapsulamiento;
 
 /**
  *

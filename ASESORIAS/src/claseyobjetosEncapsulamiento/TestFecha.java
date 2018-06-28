@@ -1,6 +1,6 @@
 //Los metodos de una clase se escriben como funciones.
 //Dentro del metodo podemos acceder a los atributos de la clase de variables globales
-package claseyobjetosCapsulamiento;
+package claseyobjetosEncapsulamiento;
 
 /**
  *
