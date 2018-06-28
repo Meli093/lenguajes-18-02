@@ -28,7 +28,8 @@ public Personita(String dni) {//este es un constuctor sobre recarga
 public void Practiar(){
 System.out.println("\nsoy :"+nombre+"\nmi edad" +edad+ "\npractio programacion");    
 }
-public void Practicar(int hrs){//este es un constuctor sobre recarga
+//este es un constuctor sobre recarga se diferencia sobre los parametros que tenga
+public void Practicar(int hrs){
     System.out.println("\nhe practicado" +hrs+ "\nen java");    
 }
 }
