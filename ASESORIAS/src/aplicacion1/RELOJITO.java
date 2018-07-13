@@ -19,21 +19,30 @@ public class RELOJITO extends javax.swing.JFrame {
     public RELOJITO() {
         initComponents();
         //Aqui pegaremos thread
-         while(true){
-       LocalTime tiempo=LocalTime.now();
-int hora=tiempo.getHour();
-int minuto=tiempo.getMinute();
-int segundo=tiempo.getSecond();
-    jLabel1.setText("La hora es:"+hora+":"+minuto+":"+segundo);
-try{
-    Thread.sleep(1000);
-    
-}catch(InterruptedException e){
-    
-}
+        
+      setAlwaysOnTop(true); 
+        initComponents();
+        //Aqui pegaremos el thread
+          Thread t1 = new Thread(new Runnable() {
+            public void run() {
 
+                while (true) {
+                    LocalTime time = LocalTime.now();
+                    int hora = time.getHour();
+                    int minuto = time.getMinute();
+                    int segundo = time.getSecond();
+                    jLabel1.setText(hora + ":" + minuto + ":" + segundo);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException ex) {
+
+                    }
+                }
+
+            }
+        });
+        t1.start();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -46,8 +55,6 @@ try{
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
